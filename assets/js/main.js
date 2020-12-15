@@ -31,6 +31,7 @@ $(document).ready(function() {
     $(document).click(function() {
 
         $('.sub-menu').hide();
+        $('.table-custom').find('tr').removeClass('selected');
 
     })
 
