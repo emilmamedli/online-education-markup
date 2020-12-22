@@ -44,4 +44,81 @@ $(document).ready(function() {
         $(target).show();
     })
 
+    $('.radio-button').on('click', function(e) {
+        $('.radio-button').removeClass('active');
+        $(this).addClass('active');
+    })
+
+
+
+
+    $('.slider-main').slick({
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        pauseOnDotsHover: true,
+        dots: true,
+        // appendDots: $(this).siblings('.dots-container'),
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-1"></div>';
+        },
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+
+
+
+    $('.slider-categories').slick({
+        infinite: false,
+        rows: 2,
+        slidesPerRow: 3,
+        speed: 500,
+        dots: true,
+        customPaging: function(slider, i) {
+            return '<div class="slider-dot slider-dot-2"></div>';
+        },
+        arrows: false,
+        slidesToShow: 1,
+        centerMode: false,
+        swipe: false,
+        dots: false,
+        responsive: [                    
+            {
+                breakpoint: 768,
+                settings: {
+                    rows: 1,
+                    slidesPerRow: 1,
+                    slidesToShow: 1,
+                    swipe: true,
+                    dots: true,
+                    centerMode: true,
+                    focusOnSelect: true,
+                    // initialSlide: 1,
+                }
+            }
+        ],
+    });
+    
+
+
+    $('.btn-burger').on('click', function() {
+        if ($('body').hasClass('menu-active')) {
+            $(this).find('.burger').removeClass('open');
+            $('body').removeClass('menu-active');
+        } else {
+            $(this).find('.burger').addClass('open');
+            $('body').addClass('menu-active');
+        }
+    })
+
+    $('.nav-link').on('click', function() {
+        if ($('body').hasClass('menu-active')) {
+            $('.burger').removeClass('open');
+            $('body').removeClass('menu-active');
+        }
+    })
+
 })
