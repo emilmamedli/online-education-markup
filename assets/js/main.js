@@ -48,60 +48,7 @@ $(document).ready(function() {
         $('.radio-button').removeClass('active');
         $(this).addClass('active');
     })
-
-
-
-
-    $('.slider-main').slick({
-        infinite: true,
-        speed: 500,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        pauseOnHover: true,
-        pauseOnDotsHover: true,
-        dots: true,
-        // appendDots: $(this).siblings('.dots-container'),
-        customPaging: function(slider, i) {
-            return '<div class="slider-dot slider-dot-1"></div>';
-        },
-        slidesToShow: 1,
-        slidesToScroll: 1,
-    });
-
-
-
-    $('.slider-categories').slick({
-        infinite: false,
-        rows: 2,
-        slidesPerRow: 3,
-        speed: 500,
-        dots: true,
-        customPaging: function(slider, i) {
-            return '<div class="slider-dot slider-dot-2"></div>';
-        },
-        arrows: false,
-        slidesToShow: 1,
-        centerMode: false,
-        swipe: false,
-        dots: false,
-        responsive: [                    
-            {
-                breakpoint: 768,
-                settings: {
-                    rows: 1,
-                    slidesPerRow: 1,
-                    slidesToShow: 1,
-                    swipe: true,
-                    dots: true,
-                    centerMode: true,
-                    focusOnSelect: true,
-                    // initialSlide: 1,
-                }
-            }
-        ],
-    });
-    
+  
 
 
     $('.btn-burger').on('click', function() {
@@ -119,6 +66,20 @@ $(document).ready(function() {
             $('.burger').removeClass('open');
             $('body').removeClass('menu-active');
         }
+    })
+
+    $('.test-radio').on('change', function(e) {
+        console.log($(this).is(':checked'));
+
+        $('.test-text').css('background-color', 'rgba(255, 255, 255, 0.9)')
+        $('.test-text').find('label').css('color', 'unset')
+
+
+        if ($(this).is(':checked')) {
+            $(this).parent('.test-text').css('background-color', ' #0DA0A6')
+            $(this).parent('.test-text').find('label').css('color', 'white')
+        }
+
     })
 
 })

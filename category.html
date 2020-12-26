@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/burger.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="fixed-top bg-white">
+        <nav class="navbar navbar-expand-md" id="main-nav-1">
+            <div class="container-fluid">        
+                <div class="header-block">
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="mr-md-5"><img src="assets/images/logo.png" class="logo" alt=""></a>
+                    </div>
+                    <div class="with-icon mr-md-4">
+                        <select name="lang" class="form-control select-custom" >
+                            <option value="" selected disabled>Kateqorialar</option>
+                            <option value="1">Kateqoria 1</option>
+                            <option value="2">Kateqoria 2</option>
+                            <option value="3">Kateqoria 3</option>
+                        </select>
+                        <span class="input-icon down-icon"></span>
+                    </div>
+                    <div class="btn btn-burger d-md-none">
+                        <div class="burger burger-squeeze">
+                            <div class="burger-lines"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-flex">
+                    <div class="with-icon-left mr-3">
+                        <input type="text" class="form-control search-field" placeholder="Axtar">
+                        <span class="input-icon search-icon"></span>
+                    </div>
+                    <a href="#" class="btn button-gray mr-3">Dərslərim</a>
+                    <a href="#" class="btn button-gray mr-3">Balans: 250 AZN</a>
+                    <button class="btn mr-3"><img class="hvr-icon" src="assets/images/icon_bell_color.svg" alt=""><span class="number-badge">9</span></button>
+                    <a href="#"><img src="assets/images/avatar.png" class="avatar" alt=""></a>
+                </div>                
+            </div>
+        </nav>
+        <div id="navbar-container" class="d-md-none show">
+            <div class="container h-100">
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <nav class="navbar navbar-expand-md" id="main-nav-2">
+                        <ul class="navbar-nav nav-targ-list text-center mt-2 w-100">
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 1</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 2</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 3</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 4</a>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <a href="#" class="btn text-black btn-bordered nav-link mr-3"><img src="assets/images/icon_login_dark.svg" class="button-icon" alt="">Qeydiyyat</a>
+                                    <a href="#" class="btn text-black btn-bordered nav-link"><img src="assets/images/icon_sign_up_dark.svg" class="button-icon" alt="">Daxil ol</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section custom-card-cont">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+
+                    <div class="d-flex flex-column mb-4">
+                        <button class="btn button-white mb-3">Hamısı</button>
+                        <button class="btn button-white mb-3">MIQ</button>
+                        <button class="btn button-white active mb-3">Abituriyent</button>
+                        <button class="btn button-white mb-3">Nümunələr</button>
+                        <button class="btn button-white mb-3">Siniflər</button>
+                    </div>
+
+                    <p class="filter-label">Qiymət aralığı</p>
+                    <div class="d-flex flex-column mb-4">
+                        <div class="inline-input mb-3 mb-2">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">50 - 100 AZN</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">100 - 150 AZN</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">150 - 300 AZN</span>
+                        </div>
+                    </div>
+
+                    <p class="filter-label">Qrup</p>
+                    <div class="d-flex flex-column mb-4">
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">1-ci Qrup</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">2-ci Qrup</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">3-ci Qrup</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">4-ci Qrup</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">5-ci Qrup</span>
+                        </div>
+                        <div class="inline-input mb-3">
+                            <input type="checkbox" name="" class="form-control">
+                            <span class="filter-text">Buraxılış</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-9">
+                    <h2 class="section-label">Abituriyent</h2>
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="custom-card">
+                                <span class="custom-card-tag" style="background-color: #6B66D4;">Abituriyent</span>
+                                <p class="custom-card-label">Riyaziyyat  •  İbtidai sinif</p>
+                                <p class="custom-card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut turpis amet volutpat auctor ..</p>
+                                <span class="custom-card-info">Riyaziyyat</span>
+                                <span class="custom-card-info">İbtidai sinif</span>
+                                <div class="d-flex align-items-center mt-4">
+                                    <img src="assets/images/checker.png" class="custom-card-avatar" alt="">
+                                    <span class="custom-card-name">Namer Surname teachers</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-4">
+                                    <button class="btn button-custom-card">Ətraflı</button>
+                                    <div>
+                                        <span class="custom-card-price">180.00 AZN</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer-section">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="footer-list pl-0">
+                                <li>Map</li>
+                                <li class="footer-list-text-gray"><a href="#">Home page</a></li>
+                                <li class="footer-list-text-gray"><a href="#">Cources</a></li>
+                                <li class="footer-list-text-gray"><a href="#">Education</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="footer-list">
+                                <li>About us</li>
+                                <li class="footer-list-text-gray"><a href="#">About us</a></li>
+                                <li class="footer-list-text-gray"><a href="#">Terms & Conditions</a></li>
+                                <li class="footer-list-text-gray"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-6 offset-md-6">
+                            <ul class="pl-0 ml-md-auto footer-list">
+                                <li class="footer-list-text-gray">Support</li>
+                                <li><a href="#">support@example.az</a></li>
+                                <li class="footer-list-text-gray">Call</li>
+                                <li><a href="tel:">+994 51 999 99 99</a></li>
+                                <li><a href="tel:">+994 51 999 99 99</a></li>
+                            </ul>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+            <div class="row pt-4">                
+                <div class="col-md-6 mb-4 order-md-2">
+                    <div class="d-flex justify-content-md-end">
+                        <a href=""><div class="text-center btn button-social mr-2"><img src="assets/images/icon-facebook.svg" alt=""></div></a>
+                        <a href=""><div class="text-center btn button-social mr-2"><img src="assets/images/icon-instagram.svg" alt=""></div></a>
+                        <a href=""><div class="text-center btn button-social mr-2"><img src="assets/images/icon-twitter.svg" alt=""></div></a>
+                        <a href=""><div class="text-center btn button-social"><img src="assets/images/icon-youtube.svg" alt=""></div></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4 order-md-1">
+                    <img src="assets/images/logo_light.png" class="logo" alt="">
+                    <div class="footer-list-text-gray">Copyright © 2020 Course Azerbaijan All Rights Reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

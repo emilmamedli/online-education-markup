@@ -25,13 +25,18 @@
                             <option value="3">Kateqoria 3</option>
                         </select>
                         <span class="input-icon down-icon"></span>
-                    </div>
-                    <div>
+                    </div>                    
+                    <div class="d-none d-md-block">
                         <span class="phone-label">Əlaqə nömrəsi</span>
                         <a href="tel:" class="phone-text">+7 (499) 521-16-27</a>
                     </div>
+                    <div class="btn btn-burger d-md-none">
+                        <div class="burger burger-squeeze">
+                            <div class="burger-lines"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex">
+                <div class="d-none d-md-flex">
                     <div class="with-icon-left mr-3">
                         <input type="text" class="form-control search-field" placeholder="Axtar">
                         <span class="input-icon search-icon"></span>
@@ -42,6 +47,34 @@
                 </div>
             </div>
         </nav>
+        <div id="navbar-container" class="d-md-none show">
+            <div class="container h-100">
+                <div class="d-flex flex-column justify-content-center h-100">
+                    <nav class="navbar navbar-expand-md" id="main-nav-2">
+                        <ul class="navbar-nav nav-targ-list text-center mt-2 w-100">
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 1</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 2</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 3</a>
+                            </li>
+                            <li class="nav-item hvr-underline-from-center">
+                                <a class="nav-link text-black" href="#">Menu 4</a>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-center mt-2">
+                                    <a href="#" class="btn text-black btn-bordered nav-link mr-3"><img src="assets/images/icon_login_dark.svg" class="button-icon" alt="">Qeydiyyat</a>
+                                    <a href="#" class="btn text-black btn-bordered nav-link"><img src="assets/images/icon_sign_up_dark.svg" class="button-icon" alt="">Daxil ol</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="section-profile">
@@ -537,7 +570,7 @@
     <footer>
         <div class="container">
             <div class="row footer-section">
-                <div class="col col-md-6">
+                <div class="col-md-6">
                     <div class="row">
                         <div class="col-6">
                             <ul class="footer-list pl-0">
@@ -557,10 +590,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-6">
+                <div class="col-md-6">
                     <div class="row">
-                        <div class="col col-md-6 offset-md-6">
-                            <ul class="ml-md-auto footer-list">
+                        <div class="col-md-6 offset-md-6">
+                            <ul class="pl-0 ml-md-auto footer-list">
                                 <li class="footer-list-text-gray">Support</li>
                                 <li><a href="#">support@example.az</a></li>
                                 <li class="footer-list-text-gray">Call</li>
@@ -571,11 +604,8 @@
                     </div>                    
                 </div>
             </div>
-            <div class="row pt-4">
-                <div class="col col-md-6">
-                    <img src="assets/images/logo_light.png" class="logo" alt="">
-                </div>
-                <div class="col col-md-6">
+            <div class="row pt-4">                
+                <div class="col-md-6 mb-4 order-md-2">
                     <div class="d-flex justify-content-md-end">
                         <a href=""><div class="text-center btn button-social mr-2"><img src="assets/images/icon-facebook.svg" alt=""></div></a>
                         <a href=""><div class="text-center btn button-social mr-2"><img src="assets/images/icon-instagram.svg" alt=""></div></a>
@@ -583,9 +613,8 @@
                         <a href=""><div class="text-center btn button-social"><img src="assets/images/icon-youtube.svg" alt=""></div></a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col mb-3">
+                <div class="col-md-6 mb-4 order-md-1">
+                    <img src="assets/images/logo_light.png" class="logo" alt="">
                     <div class="footer-list-text-gray">Copyright © 2020 Course Azerbaijan All Rights Reserved.</div>
                 </div>
             </div>
