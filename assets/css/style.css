@@ -1585,6 +1585,53 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 
+.img-about {
+    width: 100%;
+    height: 27rem;
+    object-fit: cover;
+}
+
+.about-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.about-text {
+    margin: 1.3rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #303030;
+}
+
+.bank-card-block {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 43rem;
+    height: 25rem;
+    background: rgb(45,119,245);
+    background: linear-gradient(105deg, rgba(45,119,245,1) 0%, rgba(45,119,245,1) 30%, rgba(255,255,255,1) 30%);
+}
+
+.btn-login-blue {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #2D77F5;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.card-section {
+    background-color: #EEF1F4;
+}
+
+.card-title {
+    margin-top: 1.2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
 
@@ -1681,6 +1728,12 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
 
     body:not(.no-navbar) {
         padding-bottom: 32rem;
+    }
+
+    .bank-card-block {
+        margin-top: 7rem;
+        padding: 3.5rem 0 2.5rem 0;
+        height: fit-content;
     }
 }
 
