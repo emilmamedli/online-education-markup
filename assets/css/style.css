@@ -1569,6 +1569,22 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
     color: white;
 }
 
+.select-100:after {
+    position: absolute;
+    right: 1rem;
+}
+
+.dropdown .btn {
+    border-radius: .25rem;
+    box-shadow: none !important;
+    border: 1px solid #ced4da !important;
+}
+
+.dropdown .btn.show {
+    border: 1px solid #ced4da !important;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
 
