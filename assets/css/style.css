@@ -1661,7 +1661,7 @@ select.select-custom-form:focus, select.select-custom-form {
     transform: translateY(50%);
     right: .5rem;
     border: none;
-    background-image: url(../images/icon_close_white.svg);
+    background-image: url(../images/icon_down_white.svg);
     background-size: contain;
 }
 
