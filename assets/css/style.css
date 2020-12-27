@@ -1722,6 +1722,10 @@ select.select-custom-form:focus, select.select-custom-form {
     left: 109%;
 }
 
+.dropdown-main .btn {
+    border-radius: .5rem;
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
 
