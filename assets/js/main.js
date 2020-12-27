@@ -82,4 +82,13 @@ $(document).ready(function() {
 
     })
 
+    $('.dropdown-menu.first > .dropdown-item').mouseenter(function(e) {
+        $('.dropdown-menu.secondary').removeClass('show');
+        $(this).find('.dropdown-menu.secondary').addClass('show');
+    })
+
+    $('.dropdown-menu.secondary').mouseleave(function(e) {
+        $('.dropdown-menu.secondary').removeClass('show');
+    })
+
 })
