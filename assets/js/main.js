@@ -5,7 +5,14 @@ $(document).ready(function() {
     })
 
     $('.show-icon').on('click', function(e) {
-        $(this).parent('.with-icon').find('input').prop('type', $(this).data('change-to'));
+        var type = $(this).data('change-to');
+        if ($(this).hasClass('clicked')) {
+            $(this).parent('.with-icon').find('input').prop('type', 'password');
+            $(this).removeClass('clicked');
+        } else {
+            $(this).parent('.with-icon').find('input[type="password"]').prop('type', type);
+            $(this).addClass('clicked');
+        }
     })
 
 

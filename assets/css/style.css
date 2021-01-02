@@ -113,6 +113,7 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
 }
 
 .title-clickable {
+    color: white !important;
     cursor: pointer;
 }
 
@@ -125,7 +126,7 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
 }
 
 .title-clickable:not(.active) {
-    color: #7976BD;
+    color: #7976BD !important;
 } 
 
 .input-label {
@@ -179,6 +180,14 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
 
 .show-icon {
     background-image: url(../images/show_input_transparent.svg);
+}
+
+.show-icon.clicked {
+    background-image: url(../images/icon_hide_color.svg);
+    top: 57%;
+    right: 0.45rem;
+    width: 1.4rem;
+    height: 1.4rem;
 }
 
 .search-icon {
