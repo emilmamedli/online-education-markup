@@ -98,4 +98,13 @@ $(document).ready(function() {
         $('.dropdown-menu.secondary').removeClass('show');
     })
 
+    $('.date-picker').datepicker({
+        format: 'dd-mm-yyyy',
+        weekStart: 1,
+        maxViewMode: 2,
+        language: 'az',
+        autoclose: true,
+        orientation: 'bottom'
+    });
+
 })

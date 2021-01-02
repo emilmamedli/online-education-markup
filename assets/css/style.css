@@ -1513,7 +1513,7 @@ a:not(.link-underlined), a:not(.link-underlined):hover {
     cursor: pointer;
 }
 
-.dropdown-menu {
+.dropdown .dropdown-menu {
     position: absolute;
     top: 60%;
     right: 75%;
