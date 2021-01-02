@@ -1735,6 +1735,14 @@ select.select-custom-form:focus, select.select-custom-form {
     border-radius: .5rem;
 }
 
+.valid-feedback.warning {
+    color: red;
+}
+
+.valid-feedback.info {
+    color: black;
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
 
