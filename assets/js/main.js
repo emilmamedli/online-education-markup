@@ -107,21 +107,9 @@ $(document).ready(function() {
         orientation: 'bottom'
     });
 
-    // $('.button-edit-icon.active').on('click', function(e) {
-    //     e.preventDefault();
-    //     return false;
-    // })
-
-    // $('.button-edit-icon input[type="text"]').on('click submit keypress keyup keydown', function(e) {
-    //     e.stopPropagation();
-    //     // e.preventDefault();
-    //     // return false;
-
-    //     // $('.button-edit-icon').addClass('edit');
-    //     // $('.button-edit-icon').find('span').hide();
-    //     // $('.button-edit-icon').find('input').show().val(value);
-    //     // $('.button-edit-icon').find('.cancel, .save').show();
-    // })
+    $('.button-edit-icon input[type="text"]').on('click', function(e) {
+        e.stopPropagation();
+    })
 
     $('.button-edit-icon:not(.active)').on('click', function(e) {
         // e.stopPropagation();
