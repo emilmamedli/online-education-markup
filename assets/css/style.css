@@ -451,7 +451,7 @@ a.btn {
 
 .button-edit-icon.active input {
     height: unset !important;
-    width: 100%;
+    width: 75%;
     border-radius: .3rem;
     border: none;
 }
