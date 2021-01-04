@@ -98,14 +98,16 @@ $(document).ready(function() {
         $('.dropdown-menu.secondary').removeClass('show');
     })
 
-    $('.date-picker').datepicker({
-        format: 'dd-mm-yyyy',
-        weekStart: 1,
-        maxViewMode: 2,
-        language: 'az',
-        autoclose: true,
-        orientation: 'bottom'
-    });
+    if ($('.date-picker').length > 0) {
+        $('.date-picker').datepicker({
+            format: 'dd-mm-yyyy',
+            weekStart: 1,
+            maxViewMode: 2,
+            language: 'az',
+            autoclose: true,
+            orientation: 'bottom'
+        });
+    }
 
     $('.button-edit-icon input[type="text"]').on('click', function(e) {
         e.stopPropagation();
