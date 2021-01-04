@@ -157,4 +157,23 @@ $(document).ready(function() {
         $(parent).find('.cancel, .save').hide();
     })
 
+    $('.grogram-add').on('click', function(e) {
+        $(this).hide();
+        $('.program-block').show();
+    })
+
+    $('.program-block .cancel').on('click', function(e) {
+        $('.program-block').find('input[type="text"]').val('')
+        $('.grogram-add').show();
+        $('.program-block').hide();
+    })
+
+    $('.program-block .add').on('click', function(e) {
+        $('.program-block').find('input[type="text"]').val('')
+        $('.grogram-add').show();
+        $('.program-block').hide();
+
+        //ajax
+    })
+
 })
