@@ -112,8 +112,7 @@ $(document).ready(function() {
     })
 
     $('.button-edit-icon:not(.active)').on('click', function(e) {
-        // e.stopPropagation();
-        var parent = $(this).parent('.button-edit-icon');        
+        // e.stopPropagation();      
 
         $('.button-edit-icon').removeClass('edit');
         $('.button-edit-icon').find('input').hide();

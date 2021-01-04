@@ -45,11 +45,6 @@ body.only-footer {
     bottom: -3.5rem;
 }
 
-a:not(.link-underlined), a:not(.link-underlined):hover {
-    /* text-decoration: none; */
-    /* color: unset; */
-}
-
 .btn:hover {
     opacity: .85;
     border: 1px solid rgba(0,0,0,.15);
@@ -1892,6 +1887,21 @@ select.select-custom-form:focus, select.select-custom-form {
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
     border-top-color: #31D0AA;
+}
+
+.dropdown-main.right .dropdown-menu {
+    right: -0.8rem;
+    left: unset;
+    top: 2.7rem;
+}
+
+.dropdown-main.right .dropdown-menu:after {
+    left: unset;
+    right: 1.5rem;
+}
+
+.dropdown-main.right .dropdown-menu img {
+    margin-right: .5rem;
 }
 
 /* For mobile devices */
