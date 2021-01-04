@@ -1789,14 +1789,6 @@ select.select-custom-form:focus, select.select-custom-form {
     border: none !important;
 }
 
-.gray .dropdown-menu {
-    background-color: #F0F4F8;
-}
-
-.gray .dropdown-menu:not(.secondary):after {
-    border-bottom: 0.4em solid #F0F4F8;
-}
-
 .dropdown-main .dropdown-toggle-side:after, .dropdown-main.show .dropdown-toggle-side:after {
     height: 0.8rem;
     bottom: 50%;
