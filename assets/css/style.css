@@ -1777,6 +1777,39 @@ select.select-custom-form:focus, select.select-custom-form {
     color: black;
 }
 
+.dropdown .dropdown-toggle-side {
+    padding: 1.2rem;
+    height: 3.3rem;
+    justify-content: left;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+    background-color: #F0F4F8;
+    border-radius: .7rem !important;
+    border: none !important;
+}
+
+.gray .dropdown-menu {
+    background-color: #F0F4F8;
+}
+
+.gray .dropdown-menu:not(.secondary):after {
+    border-bottom: 0.4em solid #F0F4F8;
+}
+
+.dropdown-main .dropdown-toggle-side:after, .dropdown-main.show .dropdown-toggle-side:after {
+    height: 0.8rem;
+    bottom: 50%;
+    right: 1.2rem;
+    transform: translateY(50%);
+    background-image: url(../images/icon_chevron_down_dark.svg);
+    background-repeat: no-repeat;
+}
+
+.dropdown-main.show .dropdown-toggle-side:after {
+    transform: translateY(50%) rotate(180deg);
+}
+
 /* For mobile devices */
 @media (max-width: 768px) {
 
