@@ -107,4 +107,66 @@ $(document).ready(function() {
         orientation: 'bottom'
     });
 
+    // $('.button-edit-icon.active').on('click', function(e) {
+    //     e.preventDefault();
+    //     return false;
+    // })
+
+    // $('.button-edit-icon input[type="text"]').on('click submit keypress keyup keydown', function(e) {
+    //     e.stopPropagation();
+    //     // e.preventDefault();
+    //     // return false;
+
+    //     // $('.button-edit-icon').addClass('edit');
+    //     // $('.button-edit-icon').find('span').hide();
+    //     // $('.button-edit-icon').find('input').show().val(value);
+    //     // $('.button-edit-icon').find('.cancel, .save').show();
+    // })
+
+    $('.button-edit-icon:not(.active)').on('click', function(e) {
+        // e.stopPropagation();
+        var parent = $(this).parent('.button-edit-icon');        
+
+        $('.button-edit-icon').removeClass('edit');
+        $('.button-edit-icon').find('input').hide();
+        $('.button-edit-icon').find('.cancel, .save').hide();
+        $('.button-edit-icon').find('span, .edit-icon').show();
+    })
+
+    $('.button-edit-icon .edit-icon').on('click', function(e) {
+        e.stopPropagation();
+        var parent = $(this).parent('.button-edit-icon');        
+        var value = $(parent).find('span').text();
+        
+        $(parent).find('span, .edit-icon').hide();
+        $(parent).addClass('edit');
+        $(parent).find('input').show().val(value);
+        $(parent).find('.cancel, .save').show();
+    })
+
+    $('.button-edit-icon .save').on('click', function(e) {
+        e.stopPropagation();
+        var parent = $(this).parent('.button-edit-icon');        
+        var value = $(parent).find('input').val();
+
+        $(parent).find('span').text(value); 
+
+        $(parent).removeClass('edit');
+        $(parent).find('input').hide();
+        $(parent).find('.cancel, .save').hide();
+        $(parent).find('span, .edit-icon').show();
+
+        //ajax
+    })
+
+    $('.button-edit-icon .cancel').on('click', function(e) { 
+        e.stopPropagation();
+        var parent = $(this).parent('.button-edit-icon');   
+
+        $(parent).removeClass('edit');
+        $(parent).find('span, .edit-icon').show();
+        $(parent).find('input').hide();
+        $(parent).find('.cancel, .save').hide();
+    })
+
 })
