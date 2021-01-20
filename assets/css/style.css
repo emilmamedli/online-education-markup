@@ -1323,6 +1323,20 @@ footer {
     overflow: hidden;
 }
 
+.quize-img-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: .7rem;
+    overflow: hidden;
+}
+
+.quize-img
+{
+    object-fit: cover;
+    width: 100%;
+}
+
 .video-container iframe {
     position: absolute;
     top: 0;
