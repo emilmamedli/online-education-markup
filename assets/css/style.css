@@ -284,6 +284,8 @@ select.select-custom option {
 .avatar {
     border-radius: 50%;
     width: 2.2rem;
+    height: 2.2rem;
+    object-fit: cover;
 }
 
 .phone-label {
@@ -393,6 +395,8 @@ a.btn {
 .sidebar-avatar {
     border-radius: 50%;
     width: 4rem;
+    height: 4rem;
+    object-fit: cover;
 }
 
 .sidebar-block {
@@ -495,6 +499,8 @@ input[type="text"], input[type="number"], input[type="password"], .btn {
 .avatar-edit {
     border-radius: 50%;
     width: 5rem;
+    height: 5rem;
+    object-fit: cover;
 }
 
 .table-custom {
