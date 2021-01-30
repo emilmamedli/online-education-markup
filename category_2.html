@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/js/rating/themes/rating.css">
     <link rel="stylesheet" href="assets/css/burger.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -187,38 +188,112 @@
             <div class="row mb-5">
                 <div class="col-12 col-md-8">
                     <div class="video-info-block">
-                        <a href="javascript:void(0);" class="tabs cursor-pointer">About</a>
-                        <a href="javascript:void(0);" class="tabs cursor-pointer active">Comments</a>
-                        <a href="javascript:void(0);" class="tabs cursor-pointer">Rate</a>
+                        <a href="javascript:void(0);" data-target="#about" class="tabs tab-button cursor-pointer active">About</a>
+                        <a href="javascript:void(0);" data-target="#reviews" class="tabs tab-button cursor-pointer">Reviews</a>
                     </div>
 
-                    <div class="comments-container">
+                    <div class="comments-container py-4">
 
-                        <div class="comment">
-                            <div class="d-flex justify-content-between mt-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/avatar_2.png" class="custom-card-avatar" alt="">
-                                    <span class="custom-card-name">Darlene Robertson</span>
-                                </div>
-                                <span class="custom-card-text">05.07.2020</span>
-                            </div>
-                            <p class="custom-card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.</p>
+                        <div class="profile-tab-item" id="about">
+                            <span class="custom-title">Title</span>
+                            <p class="custom-card-text mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.
+                            </p>
+                            <p class="custom-card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.
+                            </p>
+
+                            <span class="custom-title">Title</span>
+                            <ul class="custom-card-text mt-2">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                            </ul>
+                            <p class="custom-card-text mt-2">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.
+                            </p>
                         </div>
 
-                        <div class="comment">
-                            <div class="d-flex justify-content-between mt-4">
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/images/avatar_2.png" class="custom-card-avatar" alt="">
-                                    <span class="custom-card-name">Darlene Robertson</span>
+                        <div class="profile-tab-item" id="reviews" style="display: none;">
+
+                            <form action="">
+                                <div>
+
+                                    <div class="text-center mt-3">
+                                        <span class="custom-label">Rate the Lesson</span>
+                                        <p class="custom-card-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>                                
+                                    </div>
+
+                                    <div id="main-rate" class="mb-5">
+                                        <div class="br-wrapper br-theme-css-stars">
+                                            <select id="rate" name="rating" autocomplete="off" style="display: none;">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <span class="custom-title">Add review</span>
+                                    <textarea name="comment" class="form-control" rows="4" placeholder="Type something"></textarea>
+                                    <button type="submit" class="btn button-main text-white mt-2 mb-4">Send</button>
                                 </div>
-                                <span class="custom-card-text">05.07.2020</span>
+                            </form>
+
+                            <div class="comment">
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/avatar_2.png" class="comment-avatar" alt="">
+                                        <div>
+                                            <span class="custom-card-name">Darlene Robertson</span>
+                                            <div class="ml-2 br-wrapper br-theme-css-stars">
+                                                <select class="rate-readonly" name="rating" autocomplete="off" style="display: none;">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3" selected>3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="custom-card-text">05.07.2020</span>
+                                </div>
+                                <p class="custom-card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.</p>
                             </div>
-                            <p class="custom-card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.</p>
+    
+                            <div class="comment">
+                                <div class="d-flex justify-content-between mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <img src="assets/images/avatar_2.png" class="comment-avatar" alt="">
+                                        <div>
+                                            <span class="custom-card-name">Darlene Robertson</span>
+                                            <div class="ml-2 br-wrapper br-theme-css-stars">
+                                                <select class="rate-readonly" name="rating" autocomplete="off" style="display: none;">
+                                                    <option value="1" selected>1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="custom-card-text">05.07.2020</span>
+                                </div>
+                                <p class="custom-card-text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae etiam nunc, molestie orci integer scelerisque sed nulla. Enim purus tellus viverra eget pharetra diam mi at. Senectus adipiscing a id nibh blandit egestas praesent erat. Neque arcu purus urna id.</p>
+                            </div>
                         </div>
 
-                    </div>
+                    </div>                    
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4 mt-4 mt-md-0">
                     <div>
                         <div class="d-flex align-items-center mb-3">
                             <img src="assets/images/checker.png" class="custom-card-avatar avatar-4" alt="">
@@ -330,6 +405,21 @@
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/rating/jquery.barrating.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+
+        $('#rate').barrating({
+            theme: 'css-stars',
+            showSelectedRating: false
+        });
+        
+        $('.rate-readonly').barrating({
+            theme: 'css-stars',
+            showSelectedRating: false,
+            readonly: true
+        });
+
+    </script>
 </body>
 </html>
